@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_all_gradient"
+    tools:context="com.kurnniawan.adminmanajemenpemesanan.LoginActivity">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mie1"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/idPelayan"
+                android:background="@drawable/bg_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID"
+                android:textSize="22sp"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"/>>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/passwordPelayan"
+                android:background="@drawable/bg_form"
+                android:layout_width="match_parent"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:hint="PASSWORD"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:onClick="loginApp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_logout"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
